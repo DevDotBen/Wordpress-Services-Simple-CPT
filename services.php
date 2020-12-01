@@ -95,7 +95,7 @@ function services_details_add_meta_box(){
  */
 function services_details_meta_box_render( $post ){
 
-    // Get the Phone number and display it in a text field
+    // Get the fa code stored in the meta data filed
     $code = get_post_meta( $post->ID, "facode", true );
     echo '<div><p>Enter the Fa-Code from Font Awsome 4 Here...</p><input type="text" class="widefat" name="facode" value="'.$code.'" placeholder="facode" /></div>';
 }
