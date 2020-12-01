@@ -110,8 +110,7 @@ add_action( 'save_post', 'services_details_meta_box_save');
  */
 function services_details_meta_box_save( $post_id ){
 
-    global $post_type;
-    // $post_type = post_type;
+
 
     // Check to see if this is our custom post type (remove this check if applying the meta box globally)
     if( $_POST['post_type'] == "services"){
